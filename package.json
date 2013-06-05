@@ -1,0 +1,25 @@
+{
+  "name": "wishlist",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "ejs": "*"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "35c7137552261e8154a91848bbb3ab934e857c97",
+  "description": "wishlist ========",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jautenim/wishlist.git"
+  },
+  "author": "Jautenim",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Jautenim/wishlist/issues"
+  }
+}

@@ -1,0 +1,20 @@
+div {
+  width: 49%;
+  height: 600px;
+  display: inline-block;
+  background-color: #AAAAAA;
+}
+
+#pending_wishes {
+  float: left;
+}
+
+#approved_wishes {
+  float: right;
+}
+
+#add_wish {
+  width: 100%;
+  height: 300px;
+  margin-top: 32px;
+}
