@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>ERE Wishlist</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
     <div id="pending_wishes">
@@ -13,10 +13,12 @@
     </div>
     <div id="add_wish">
       <h3>Add New Wish</h3>
-        <form>
-          <p>Tag: <input type="text" name="tag" /></p>
-          <p>Price: <input type="text" name="price" value="0.00" /></p>
-        </form>
+          <p>Tag: <input id="tag" type="text" name="tag" /></p>
+          <p>Price: <input id="price" type="text" name="price" value="0.00" /></p>
+          <input id="submitButton" type="submit" value="Add Wish" />
     </div>
+
+    <script src="/js/jquery-2.0.2.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
