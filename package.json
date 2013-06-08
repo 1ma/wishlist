@@ -7,12 +7,11 @@
   },
   "dependencies": {
     "express": "3.2.6",
-    "ejs": "0.8.4",
     "mongodb": "1.3.9"
   },
   "readmeFilename": "README.md",
   "gitHead": "35c7137552261e8154a91848bbb3ab934e857c97",
-  "description": "wishlist ========",
+  "description": "A simple ERE Wishlist",
   "main": "app.js",
   "repository": {
     "type": "git",

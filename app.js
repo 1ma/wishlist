@@ -4,8 +4,7 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
-  , wish = require('./routes/wish')
+  , wishes = require('./routes/wishes')
   , db = require('./routes/db')
   , http = require('http')
   , path = require('path');
@@ -14,22 +13,23 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
+app.use(express.compress());
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+
+var oneMonth = 2678400000;
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: oneMonth}));
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.post('/wish', wish.add);
+app.post('/wishes', wishes.addWish);
+app.get('/wishes', wishes.fetchAllWishes);
 
 db.init();
 
