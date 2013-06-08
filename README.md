@@ -12,6 +12,6 @@ Comments, suggestions and pull requests are welcome :)
 Current Dependencies
 ====================
 
-nodejs    0.10.x
-npm       1.2.x
-mongodb   2.4.x
+* nodejs 0.10.x
+* npm 1.2.x
+* mongodb 2.4.x

@@ -11,7 +11,7 @@ exports.init = function() {
   });
 };
 
-exports.insert = function (tag, price) {
+exports.insert = function (tag, price, callback) {
   var wish = { tag: tag, price: price, date: new Date()};
   db.collection('wishes', function(err, collection) {
     if (err)
@@ -21,7 +21,7 @@ exports.insert = function (tag, price) {
       if (err)
         throw err;
 
-      // TODO Return a callback function?
+      callback("OK");
     });
   });
 };

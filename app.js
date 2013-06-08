@@ -20,8 +20,8 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 
-var oneMonth = 2678400000;
-app.use(express.static(path.join(__dirname, 'public'), {maxAge: oneMonth}));
+var oneYear = 31536000000;
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: oneYear}));
 
 // development only
 if ('development' == app.get('env')) {
