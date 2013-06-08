@@ -5,8 +5,7 @@ exports.init = function() {
   mongo.Db.connect('mongodb://localhost:27017/wish', {auto_reconnect: true}, function(err, handler) {
     if (err)
       throw err;
-
-    console.log("Got handler to database, yay!");
+    
     db = handler;
   });
 };
