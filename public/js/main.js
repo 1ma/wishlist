@@ -29,8 +29,7 @@ $("#submitButton").click(function() {
   
   // TODO: Handle possible errors
   $.post('/wishes', {"tag": tag, "price": price}, function() {
-    
-    $('#pending_wishes_list').append('<li>' + tag + ' ' + price + '</li>');
+    $('#pending_list').append('<li>' + tag + ' ' + price + '</li>');
   });
 });
 
